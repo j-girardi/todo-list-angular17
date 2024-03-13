@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './components/header/header.component';
+import { TodoFormComponent } from './components/todo-form/todo-form.component';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { HeaderComponent } from './components/header/header.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    HeaderComponent
+    HeaderComponent,
+    TodoFormComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]
