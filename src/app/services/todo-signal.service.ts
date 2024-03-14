@@ -10,10 +10,11 @@ export class TodoSignalService {
 
   public updateTodos({id, title, description, done}: Todo): void {
     if((title && id && description !== null) || undefined) {
-      this.todosState.mutate((todos) => {
+      this.todosState.update((todos) => {
         if(todos !== null) {
           todos.push(new Todo(id, title, description, done));
         }
+        return todos;
       });
       this.saveTodosInLocalStorage();
     }

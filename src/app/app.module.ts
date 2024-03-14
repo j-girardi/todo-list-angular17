@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './components/header/header.component';
 import { TodoFormComponent } from './components/todo-form/todo-form.component';
+import { TodoCardComponent } from './components/todo-card/todo-card.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { TodoFormComponent } from './components/todo-form/todo-form.component';
     BrowserAnimationsModule,
     HeaderComponent,
     TodoFormComponent,
+    TodoCardComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]
